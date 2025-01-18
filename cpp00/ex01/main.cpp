@@ -1,6 +1,4 @@
-#include "Contact.hpp"
 #include "PhoneBook.hpp"
-#include "iostream"
 
 int main()
 {
@@ -21,16 +19,13 @@ int main()
 				pb.exit();
 			continue;
 		}
-
-		if (!command.compare("1") || !command.compare("2") || !command.compare("3"))
-			std::cout << "please write a command instead of number." << std::endl;
-		else if (!command.compare("ADD"))
+		pb.clear_line();
+		if (!command.compare("ADD"))
 			pb.add();
 		else if (!command.compare("SEARCH"))
 			pb.search();
 		else if (!command.compare("EXIT"))
 			pb.exit();
 		
-		std::cout << command << std::endl;
 	}
 }
