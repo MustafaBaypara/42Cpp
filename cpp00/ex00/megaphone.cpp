@@ -8,15 +8,15 @@ int main(int ac, char **av)
 	}
 	else
 	{
-		std::string ahmet;
+		std::string command;
 
 		for (int j = 1; j < ac; j++)
-			ahmet.append(av[j]);
+			command.append(av[j]);
 
-		for (unsigned int i = 0; i < ahmet.length(); i++)
-			ahmet[i] = toupper(ahmet[i]);
+		for (unsigned int i = 0; i < command.length(); i++)
+			command[i] = toupper(command[i]);
 
-		std::cout << ahmet << std::endl;
+		std::cout << command << std::endl;
 	}
 	return 0;
 }
