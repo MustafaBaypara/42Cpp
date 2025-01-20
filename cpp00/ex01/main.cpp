@@ -13,13 +13,13 @@ int main()
 		std::cout << "3. EXIT" << std::endl;
 		std::cout << "Enter a command: ";
 		std::getline(std::cin, command);
+		pb.clear_line();
 		if (command.empty())
 		{
 			if (std::cin.eof())
 				pb.exit();
 			continue;
 		}
-		pb.clear_line();
 		if (!command.compare("ADD"))
 			pb.add();
 		else if (!command.compare("SEARCH"))
