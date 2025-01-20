@@ -21,7 +21,7 @@ int Account::getNbDeposits( void )
 {
 	return (_totalNbDeposits);
 }
-
+ 
 int Account::getNbWithdrawals( void )
 {
 	return (_totalNbWithdrawals);
