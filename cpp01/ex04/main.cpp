@@ -4,11 +4,8 @@
 void replace(std::string filename, std::string oldString, std::string newString)
 {
     std::fstream filein(filename.c_str(), std::ios::in);
-    if (!filein.is_open())
-    {
-        std::cerr << "File doesn't exist." << std::endl;
+    if (!filein.is_open() && std::cerr << "File doesn't exist." << std::endl)
         return;
-    }
 
     filename.append(".replace");
     std::fstream fileout(filename.c_str(), std::ios::out);
@@ -42,11 +39,8 @@ void replace(std::string filename, std::string oldString, std::string newString)
 
 int main(int ac, char **av)
 {
-    if (ac != 4)
-    {
-        std::cerr << "Usage: ./replace filename oldString newString" << std::endl;
+    if (ac != 4 && std::cerr << "Usage: ./replace filename oldString newString" << std::endl)
         return 1;
-    }
 
     replace(av[1], av[2], av[3]);
     return 0;
