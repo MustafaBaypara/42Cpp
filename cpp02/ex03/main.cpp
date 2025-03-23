@@ -18,3 +18,4 @@ int main(void)
     std::cout << "p4 is in triangle: " << (bsp(a, b, c, p4) == 1 ? "True" : "False") << std::endl;
 
     return 0;
+}
