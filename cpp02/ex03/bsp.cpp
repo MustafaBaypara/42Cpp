@@ -2,12 +2,13 @@
 
 static Fixed area(Point const &x, Point const &y, Point const &z)
 {
-	// Area: |(x1(y2-y3) + x2(y3-y1) + x3(y1-y2)) / 2
+    // triangle area: = b * h / 2
+	// parallelogram area: (x1(y2-y3) + x2(y3-y1) + x3(y1-y2)) / 2
     float val = (x.getX().toFloat() * (y.getY().toFloat() - z.getY().toFloat())) +
                 (y.getX().toFloat() * (z.getY().toFloat() - x.getY().toFloat())) +
                 (z.getX().toFloat() * (x.getY().toFloat() - y.getY().toFloat()));
 
-    return Fixed(std::abs(val) / 2.0f); // absolute value
+    return Fixed(std::abs(val) / 2.0f);
 }
 
 bool bsp(Point const a, Point const b, Point const c, Point const point)
