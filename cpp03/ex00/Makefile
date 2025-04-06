@@ -6,7 +6,7 @@ STD				=	-std=c++98
 
 RM				=	rm -rf
 
-SRCS 			=	Claptrap.cpp main.cpp
+SRCS 			=	ClapTrap.cpp main.cpp
 
 OBJ 			=	$(SRCS:.cpp=.o)
 
