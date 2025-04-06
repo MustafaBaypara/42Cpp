@@ -1,6 +1,6 @@
 NAME			=	diamondtrap
 CC				=	c++
-CFLAGS			=	-Wall -Werror -Wextra
+CFLAGS			=	-Wall -Werror -Wextra 
 STD				=	-std=c++98
 
 RM				=	rm -rf
@@ -12,10 +12,10 @@ OBJ 			=	$(SRCS:.cpp=.o)
 all				:	$(NAME)
 
 $(NAME)			:	$(OBJ)
-					@$(CC) $(CFLAGS) $(STD) $^ -o $(NAME)
+					$(CC) $(CFLAGS) $(STD) $^ -o $(NAME)
 
 %.o				:	%.cpp
-					@$(CC) $(CFLAGS) $(STD) -c $< -o $@
+					$(CC) $(CFLAGS) $(STD) -c $< -o $@
 
 clean			:
 					@$(RM) -rf $(OBJ)
