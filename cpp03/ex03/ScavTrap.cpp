@@ -59,6 +59,11 @@ void ScavTrap::Stats()
 	std::cout << "Energy Points: " << this->energyPoints << std::endl;
 	std::cout << "----------------------------------------" << std::endl << std::endl;
 }
+
+int ScavTrap::getEnergy()
+{
+	return energyPoints;
+}
 ScavTrap::~ScavTrap()
 {
 	std::cout << "Default destructor called. ScavTrap" << std::endl;
