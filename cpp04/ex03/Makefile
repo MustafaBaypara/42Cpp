@@ -1,4 +1,4 @@
-NAME			=	animal
+NAME			=	materia
 
 CC				=	c++
 CFLAGS			=	-Wall -Werror -Wextra -g
@@ -7,10 +7,10 @@ STD				=	-std=c++98
 RM				=	rm -rf
 
 SRCS 			=	main.cpp \
-					AAnimal.cpp \
-					Dog.cpp \
-					Cat.cpp \
-					Brain.cpp \
+					AMateria.cpp \
+					Ice.cpp \
+					Cure.cpp \
+					MateriaSource.cpp Character.cpp\
 
 OBJ 			=	$(SRCS:.cpp=.o)
 
