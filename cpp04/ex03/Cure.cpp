@@ -2,7 +2,7 @@
 
 Cure::Cure() : AMateria::AMateria()
 {
-	this->type = "Cure";
+	this->type = "cure";
 	std::cout << "Default constructor - Cure" << std::endl;
 }
 
