@@ -1,6 +1,7 @@
 #include "MateriaSource.hpp"
 
-MateriaSource::MateriaSource()
+MateriaSource::MateriaSource():
+storage()
 {
 	std::cout << "Default constructor - MateriaSource" << std::endl;
 }

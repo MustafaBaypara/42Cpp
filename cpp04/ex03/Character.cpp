@@ -1,11 +1,13 @@
 #include "Character.hpp"
 
-Character::Character()
+Character::Character() :
+inventory(), name(),floor()
 {
 	std::cout << "Default constructor - Character" << std::endl;
 }
 
-Character::Character(const std::string copy)
+Character::Character(const std::string copy) :
+inventory(), floor()
 {
 	std::cout << "Name Copy constructor - Character" << std::endl;
 	this->name = copy;
