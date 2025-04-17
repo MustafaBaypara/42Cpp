@@ -24,6 +24,11 @@ std::string AAnimal::getType() const
 	return(this->type);
 }
 
+void AAnimal::makeSound() const
+{
+	std::cout << "AAnimal Sound!" << std::endl;
+}
+
 AAnimal::~AAnimal()
 {
 	std::cout << "Default destructor - AAnimal" << std::endl;

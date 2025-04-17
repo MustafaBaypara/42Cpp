@@ -1,7 +1,7 @@
 NAME			=	animal
 
 CC				=	c++
-CFLAGS			=	-Wall -Werror -Wextra -g
+CFLAGS			=	-Wall -Werror -Wextra
 STD				=	-std=c++98
 
 RM				=	rm -rf

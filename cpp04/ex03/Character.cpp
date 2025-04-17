@@ -45,8 +45,6 @@ AMateria* Character::getFloor()
 
 void Character::setFloor(AMateria *m)
 {
-	if (this->getFloor() != NULL)
-		delete this->floor;
 	this->floor = m;
 }
 

@@ -22,5 +22,22 @@ int main()
 	delete bob;
 	delete me;
 	delete src;
+
+	IMateriaSource *source = new MateriaSource();
+
+	Character Chiko("Chiko");
+
+	source->learnMateria(new Ice());
+
+	Chiko.equip(source->createMateria("ice"));
+	Chiko.use(0, Chiko);
+	Chiko.unequip(0);
+	Chiko.use(0, Chiko);
+	Chiko.equip(Chiko.getFloor());
+	Chiko.use(0, Chiko);
+	Chiko.unequip(0);
+
+	delete source;
+
 	return 0;
 }
